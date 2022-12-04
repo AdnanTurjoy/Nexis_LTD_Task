@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Attendance from "./pages/attendance/Attendance";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
+import { createContext, useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import PrivateRoute from "./route/PrivateRoute";
+export const TokenAuth = createContext();
 function App() {
+  const [token, setToken] = useState({});
+  console.log(token);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TokenAuth.Provider value={[token, setToken]}>
+        <BrowserRouter>
+          <Routes>
+          <Route
+              path="/"
+              element={
+                <PrivateRoute token={token}>
+                  <Attendance />
+                </PrivateRoute>
+              }
+            />
+            {/* <Route path="/" element={<Attendance />} /> */}
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+          </Routes>
+        </BrowserRouter>
+      </TokenAuth.Provider>
     </div>
   );
 }

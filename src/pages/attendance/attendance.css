@@ -1,0 +1,39 @@
+.logo{
+  
+width: 164.21px;
+height: 60px;
+
+margin-bottom: 30px;
+background: url(../../../public/assets/image/ultimate.png);
+}
+.conatiner{
+    width: 1074.83px;
+    height: 1657px;
+  
+    }
+    
+.heading{
+   
+margin-bottom: 30px;
+width: 480px;
+height: 72px;
+
+background: #1678CB;
+border-radius: 5px;
+}
+
+.heading .heading-text{
+text-align: center;
+width: 383px;
+height: 37px;
+
+text-align: center;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 42px;
+
+color: #FFFFFF;
+}
+

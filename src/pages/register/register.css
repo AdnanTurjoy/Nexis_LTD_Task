@@ -1,0 +1,122 @@
+.logo{
+    position: absolute;
+width: 164.21px;
+height: 60px;
+left: 56px;
+top: 62px;
+
+background: url(../../../public/assets/image/ultimate.png);
+}
+
+.signin-photo{
+    position: absolute;
+    width: 612px;
+    height: 437px;
+    left: 128px;
+    top: 110px;
+    
+    background: url(../../../public/assets/image/sign-in-photo.png); 
+}
+
+.right-side{
+  
+    position: absolute;
+    width: 516px;
+    height: 630px;
+    left: 889px;
+    top: 19px;
+    
+    background: #FFFFFF;
+    box-shadow: 1px -10px 25px rgba(201, 201, 201, 0.25), -1px 10px 25px rgba(147, 147, 147, 0.25);
+
+}
+
+
+.right-side.title{
+    position: absolute;
+width: 124px;
+height: 24px;
+left: 1085px;
+top: 128px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.form-group{
+    
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 10px;
+    
+}
+ /* .phone-number{
+   position: absolute;
+width: 94px;
+height: 19px;
+left: 1070px;
+top: 251px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #B4B4B4;
+} */
+
+/* .phone-number{
+    position: absolute;
+width: 368.5px;
+height: 0px;
+left: 963px;
+top: 272px;
+
+background: #B4B4B4;
+border: 1px solid #A4A4A4;
+}  */
+
+.btn{
+   
+    width: 142px;
+    height: 49px;
+    left: 1076px;
+    top: 424px;
+    
+    background: #1678CB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+span{
+   
+width: 41px;
+height: 19px;
+left: 978px;
+top: 251px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #B4B4B4;
+}
+
+.bottom-login{
+  
+  
+    width: 242px;
+    height: 17px;
+    left: 1090px;
+    top: 571px;
+    
+
+}
