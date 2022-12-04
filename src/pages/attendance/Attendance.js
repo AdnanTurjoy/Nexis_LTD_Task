@@ -14,7 +14,6 @@ function Attendance(props) {
       .get("https://test.nexisltd.com/test", {
         headers: {
           Authorization: "Bearer " + token.access_token,
-         // Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImRlbW9AZ21haWwuY29tIiwiRmlyc3RfbmFtZSI6IkZpcnN0c2RmZGQgTmFtZSIsIkxhc3RfbmFtZSI6Ikxhc3RkZHNkZiBOYW1lIiwiVWlkIjoiNjM4OTEwMjRiODFhMjc3MGI3ZmIyYjU2IiwiZXhwIjoxNjcwMTY3ODg2fQ.5mYD_hRcsqeoKqKuKlE-mMoSC0uZN-ggyUeFkVw08Hg`,
         },
       })
       .then((res) => {
